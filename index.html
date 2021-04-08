@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <head></head>
+    <main>
+        <h1 id="title">Feedback!</h1>
+        <p id="description">Help up to improve our service by filling this short survey.</p>
+        <form id="survey-form">
+            <div class="form-element">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-element">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" email="email" id="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-element">
+                <label id="number-label" for="number">Age &#40;optional&#41;</label>
+                <input type="number" number="number" id="number" min="18"  max="99" placeholder="Enter your age">
+            </div>
+            <div class="form-element">
+                <p>You are from:</p>
+                <div class="checkbox-container">
+                    <label><input type="checkbox" name="location" id="" value="us">US.</label>
+                </div>
+                <div class="checkbox-container">
+                    <label><input type="checkbox" name="location" id="" value="uk">UK.</label>
+                </div>
+                <div class="checkbox-container">
+                    <label><input type="checkbox" name="location" id="" value="world">Rest of the world.</label>
+                </div>
+            </div>
+            <div class="form-element">
+                <label for="dropdown">Our best services are:</label>
+                <select name="" id="dropdown">
+                    <option value="wd">Web design</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="gd">Graphic Design</option>
+                </select>
+            </div>
+            <div class="form-element">
+                <p>Would you call us again?</p>
+                <div class="call-us-radio-container">
+                    <label><input type="radio" name="call" id="" value="yes" class="call-us-radio">Absolutely!</label>
+                </div>
+                <div class="call-us-radio-container">
+                    <label><input type="radio" name="call" id="" value="not-sure" class="call-us-radio">Not sure.</label>
+                </div>
+                <div class="call-us-radio-container">
+                    <label><input type="radio" name="call" id="" value="no" class="call-us-radio">No, but thanks.</label>
+                </div>
+            </div>
+            <div class="form-element">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-element">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
